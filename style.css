@@ -9,28 +9,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--cream);
-    line-height: 1.6;
+    background:var(--cream);
+    color: var(--brown);
 }
 .header{
-    height: 75px;
+    height: 90px;
+    padding: 0 7%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 55px;
-    background-color: var(--forest);
+    justify-content:space-between;
+    background: var(--forest);
     border-bottom: 4px solid var(--brown);
 }
 .logo{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 28px;
+    font-size: 34px;
     font-weight: bold;
     color: var(--cream);
 }
 nav{
     display: flex;
+    align-items: center;
     gap: 35px;
 }
 nav a{
@@ -38,13 +42,29 @@ nav a{
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    padding: 8px 15px;
-    border-radius: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
     transition: 0.3s;
 }
-nav a:hover{
+nav a:hover,
+nav a:active{
     background-color: var(--peach);
     color: var(--brown);
+}
+.search btn{
+    width: 62px;
+    height:62px;
+    border-radius: 50%;
+    border: 3px solid var(--brown);
+    background: var(--cream);
+    color: var(--brown);
+    font-size: 38px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
 }
 .search{
     width: 42px;
@@ -164,6 +184,7 @@ nav a:hover{
     color: var(--cream);
     text-align: center;
     border-top: 4px solid var(--brown);
+
 }
 .footer p{
     font-size: 15px;
