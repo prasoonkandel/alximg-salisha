@@ -74,5 +74,16 @@ nav a:hover{
     color: var(--brown);
     margin-bottom: 30px;
 }
+.main button{
+    display:inline-block;
+    padding: 12px 25px;
+    background-color: var(--forest);
+    color: var(--cream);
+    text-decoration: none;
+    border: 2px solid var(--brown);
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
 
