@@ -88,7 +88,17 @@ nav a:hover{
 .main button:hover{
     background-color: var(--peach);
     color:var(--brown);
-    
+}
+.feature card{
+    width: 30%;
+    min-height: 130px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--cream);
+    border: 3px solid var(--forest);
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 var(--brown);
+    transition: 0.3s;
 }
 
 
