@@ -1,3 +1,9 @@
+:root{
+    --forest:#1D4533;
+    --cream: #F7EAE0;
+   --peach:#F9D2BA;
+   --brown:#5E3122;
+}
 *{
     margin: 0;
     padding: 0;
@@ -163,6 +169,7 @@ nav a:hover{
     font-size: 15px;
     font-weight: bold;
 }
+
 
 
 
