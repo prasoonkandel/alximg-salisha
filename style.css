@@ -134,6 +134,13 @@ nav a:hover{
     color: var(--brown);
     font-size: 17px;
   }
+  .theme list{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top:25px;
+    flex-wrap: wrap;
+  }
 
 
 
