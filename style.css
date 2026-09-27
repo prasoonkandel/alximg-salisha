@@ -143,7 +143,11 @@ nav a:hover{
   }
 .theme list span{
     padding: 10px 20px;
-    background-color: var(--);
+    background-color: var(--peach);
+    color: var(--forest);
+    border: 2px solid var(--forest);
+    border-radius: 20px;
+    font-weight: bold;
 }
 
 
