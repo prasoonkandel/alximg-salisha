@@ -149,5 +149,15 @@ nav a:hover{
     border-radius: 20px;
     font-weight: bold;
 }
+.footer{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--forest);
+    color: var(cream);
+    text-align: center;
+    border-top: 4px solid var(--brown);
+}
 
 
