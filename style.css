@@ -133,128 +133,134 @@ nav a:active{
     background: var(--forest);
     margin-bottom: 35px;
 }
-.search{
-    width: 42px;
-    height: 42px;
+.creative text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    letter-spacing: 4px;
+    color: var(--brown);
+    text-align: center;
+}
+.creative text span{
+    color: var(--forest);
+    margin: 0 8px;
+}
+.decoration bottom{
+    width: 75%;
     display: flex;
     align-items: center;
-    justify-items: center;
-    border: 2px solid var(--cream);
-    border-radius: 20%;
-    color: var(--cream);
+    justify-content: space-between;
+    margin-top: 30px;
 }
-.cute{
-    padding: 65px 8%;
-    background-color: var(--cream);
-    border-bottom: 3px solid var(--brown);
-
+.small line{
+    width:35%;
+    height: 2px;
+    background: var(--forest);
 }
-.cute content{
-    max-width: 850px;
-    margin: auto;
-    text-align: left;
+.leaf{
+     font-size: 38px;
+     color: var(--forest);
+     transform: rotate(-25deg)0;
 }
-.cute h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 42px;
-    color: var(--forest);
-    margin-bottom: 20px;
-
-}
-.hero p{
-    max-width: 750px;
-    font-size: 18px;
-    color: var(--brown);
-    margin-bottom: 30px;
-}
-.main button{
-    display:inline-block;
-    padding: 12px 25px;
-    background-color: var(--forest);
-    color: var(--cream);
-    text-decoration: none;
-    border: 2px solid var(--brown);
-    border-radius: 25px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.main button:hover{
-    background-color: var(--peach);
-    color:var(--brown);
+.feature{
+    padding: 32px 7%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background: var(--peach);
+    border-top: 2px solid var(--brown);
+    border-bottom: 2px solid var(--brown);
 }
 .feature card{
-    width: 30%;
-    min-height: 130px;
-    padding: 20px;
-    text-align: center;
-    background-color: var(--cream);
-    border: 3px solid var(--forest);
-    border-radius: 10px;
-    box-shadow: 5px 5px 0 var(--brown);
-    transition: 0.3s;
-}
-  .feature card:hover{
-    transform: translateY(-5px);
-  }
-  .feature card h2{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
-    color: var(--forest);
-    margin-bottom: 5px;
-  }
-  .feature card p{
-    color: var(--brown);
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .extra{
-    min-height: 250px;
-    padding: 45px 8%;
-    text-align: center;
-    background-color: var(--cream);
-    border-radius: 3px solid var(--brown);
-
-  }
-  .extra h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--forest);
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  .extra p{
-    max-width: 600px;
-    margin: auto;
-    color: var(--brown);
-    font-size: 17px;
-  }
-  .theme list{
+    width: 31%;
+    min-height: 145px;
+    padding: 25px;
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top:25px;
-    flex-wrap: wrap;
-  }
-.theme list span{
-    padding: 10px 20px;
-    background-color: var(--peach);
-    color: var(--forest);
+    align-items: center;
+    gap: 22px;
+    background:var(--cream) ;
     border: 2px solid var(--forest);
-    border-radius: 20px;
-    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 5px 5px 0 var(--brown);
 }
-.footer{
-    min-height: 70px;
+.feature icon{
+    min-width: 70px;
+    height: 70px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--forest);
-    color: var(--cream);
-    text-align: center;
-    border-top: 4px solid var(--brown);
-
+    background: var(--peach);
+    color: var(--forest);
+    font-size: 32px;
 }
-.footer p{
+.feature card h2{
+font-family: 'Courier New', Courier, monospace;
+font-size: 25px;
+color: var(--forest);
+margin-bottom: 5px;
+}
+.feature card p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: var(--brown);
+}
+.themes{
+    min-height: 270px;
+    padding: 45px 7%;
+    text-align: center;
+    background: var(--cream);
+}
+.theme heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 12px;
+}
+.theme heading span{
+    width: 130px;
+    height: 2px;
+    background: var(--brown); 
+}
+.theme heading h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    color: var(--forest);
+}
+.themes>p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+.theme list{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.theme list button{
+    padding: 10px 25px;
+    border: 2px solid var(--forest);
+    border-radius: 25px;
+    background: var(--peach);
+    color: var(--forest);
+    font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
+    transition: 0,3s;
+}
+.theme list button:hover{
+       background: var(--forest);
+       color: var(--cream);
+}
+.footer{
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--forest);
+    color: var(--cream);
+    border-top: 3px solid var(--brown);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
-
