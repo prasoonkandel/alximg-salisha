@@ -68,3 +68,11 @@ nav a:hover{
     margin-bottom: 20px;
 
 }
+.hero p{
+    max-width: 750px;
+    font-size: 18px;
+    color: var(--brown);
+    margin-bottom: 30px;
+}
+
+
