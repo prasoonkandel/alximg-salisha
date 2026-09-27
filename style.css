@@ -159,5 +159,10 @@ nav a:hover{
     text-align: center;
     border-top: 4px solid var(--brown);
 }
+.footer p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
 
 
