@@ -103,6 +103,17 @@ nav a:hover{
   .feature card:hover{
     transform: translateY(-5px);
   }
+  .feature card h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: var(--forest);
+    margin-bottom: 5px;
+  }
+  .feature card p{
+    color: var(--brown);
+    font-size: 16px;
+    font-weight: bold;
+  }
 
 
 
