@@ -100,5 +100,9 @@ nav a:hover{
     box-shadow: 5px 5px 0 var(--brown);
     transition: 0.3s;
 }
+  .feature card:hover{
+    transform: translateY(-5px);
+  }
+
 
 
