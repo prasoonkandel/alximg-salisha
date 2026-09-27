@@ -161,7 +161,7 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     background-color: var(--forest);
-    color: var(cream);
+    color: var(--cream);
     text-align: center;
     border-top: 4px solid var(--brown);
 }
