@@ -85,5 +85,10 @@ nav a:hover{
     font-weight: bold;
     transition: 0.3s;
 }
+.main button:hover{
+    background-color: var(--peach);
+    color:var(--brown);
+    
+}
 
 
