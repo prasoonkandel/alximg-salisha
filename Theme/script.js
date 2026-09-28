@@ -54,22 +54,7 @@ function createThemeCard(theme) {
     description = theme.details;
   }
 
-  let thumb = "";
-  if (theme && theme.image) {
-    thumb = theme.image;
-  } else if (theme && theme.thumbnail) {
-    thumb = theme.thumbnail;
-  } else if (theme && theme.preview) {
-    thumb = theme.preview;
-  }
-
-  let thumbMarkup = '<div class="theme-card-thumb"></div>';
-  if (thumb) {
-    thumbMarkup = `<div class="theme-card-thumb" style="background-image: url('${thumb}'); background-size: cover; background-position: center;"></div>`;
-  }
-
   card.innerHTML = `
-    ${thumbMarkup}
     <div class="theme-card-body">
       <h3>${title}</h3>
       <p>${description}</p>

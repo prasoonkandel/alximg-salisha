@@ -120,34 +120,34 @@ body {
 .theme-card {
     display: flex;
     flex-direction: column;
-    min-height: 240px;
-    padding: 18px;
+    justify-content: flex-start;
+    min-height: 150px;
+    padding: 22px 20px;
     background: var(--cream);
     border: 2px solid var(--forest);
     border-radius: 16px;
     box-shadow: 5px 5px 0 var(--brown);
 }
 
-.theme-card-thumb {
-    width: 100%;
-    height: 120px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, var(--peach), var(--theme-soft));
-    border: 1px solid var(--forest);
-    margin-bottom: 16px;
+.theme-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .theme-card-body h3 {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: var(--forest);
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 1.2;
 }
 
 .theme-card-body p {
     color: var(--brown);
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
+
 
 @media (max-width: 700px) {
     .themes-page {
