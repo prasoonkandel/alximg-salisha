@@ -1,77 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Theme Detail</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theme Detail</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    >
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <body>
+        <header class="header">
+            <div class="logo">Alximg</div>
 
-<body>
-    <header class="header">
-        <div class="logo">Alximg</div>
+            <nav aria-label="Main navigation">
+                <a href="../">HOME</a>
+                <a href="./" class="active">THEMES</a>
+            </nav>
 
-        <nav aria-label="Main navigation">
-            <a href="../">HOME</a>
-            <a href="./" class="active">THEMES</a>
-        </nav>
+            <button class="search-btn" type="button" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="./Themes/#theme-search" style="text-decoration: none"
+                    >Search</a
+                >
+            </button>
+        </header>
 
-        <button class="search-btn" type="button" aria-label="Search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-           <a href="./Theme/#theme-search">Search</a>
+        <main class="theme-detail-page">
+            <section class="theme-detail-card" aria-live="polite">
+                <a class="back-link" href="./">← Back to themes</a>
+                <h1 id="theme-name">Loading theme...</h1>
+                <p id="theme-description">Loading description...</p>
 
-        </button>
-    </header>
+                <form id="generate-form" class="generate-form">
+                    <label class="input-group">
+                        <span>Image URL</span>
+                        <input
+                            id="input-image-url"
+                            type="url"
+                            placeholder="https://example.com/your-image.jpg"
+                        />
+                    </label>
 
-    <main class="theme-detail-page">
-        <section class="theme-detail-card" aria-live="polite">
-            <a class="back-link" href="./">← Back to themes</a>
-            <h1 id="theme-name">Loading theme...</h1>
-            <p id="theme-description">Loading description...</p>
+                    <label class="input-group">
+                        <span>Or upload an image</span>
+                        <input
+                            id="input-image-file"
+                            type="file"
+                            accept="image/*"
+                        />
+                    </label>
 
-            <form id="generate-form" class="generate-form">
-                <label class="input-group">
-                    <span>Image URL</span>
-                    <input id="input-image-url" type="url" placeholder="https://example.com/your-image.jpg" />
-                </label>
+                    <button type="submit" class="primary-btn">
+                        Generate image
+                    </button>
+                </form>
 
-                <label class="input-group">
-                    <span>Or upload an image</span>
-                    <input id="input-image-file" type="file" accept="image/*" />
-                </label>
-
-                <button type="submit" class="primary-btn">Generate image</button>
-            </form>
-
-            <div id="result-box" class="result-box">
-                <img id="generated-image" class="generated-image" alt="Generated image result" />
-                <div class="result-actions">
-                    <a id="download-btn" class="download-btn" href="#" download>Download image</a>
+                <div id="result-box" class="result-box">
+                    <img
+                        id="generated-image"
+                        class="generated-image"
+                        alt="Generated image result"
+                    />
+                    <div class="result-actions">
+                        <a
+                            id="download-btn"
+                            class="download-btn"
+                            href="#"
+                            download
+                            >Download image</a
+                        >
+                    </div>
                 </div>
-            </div>
 
-            <p id="status-message" class="status-message"></p>
-        </section>
-    </main>
+                <p id="status-message" class="status-message"></p>
+            </section>
+        </main>
 
-    <footer class="footer">
-        <p>Made by Alxi for Alxis</p>
-    </footer>
+        <footer class="footer">
+            <p>Made by Alxi for Alxis</p>
+        </footer>
 
-    <script src="./theme-detail.js"></script>
-</body>
-
+        <script src="./theme-detail.js"></script>
+    </body>
 </html>
