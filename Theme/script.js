@@ -1,6 +1,8 @@
 const BASE_API_URL = "https://alximg.vercel.app";
 
 const themesGrid = document.getElementById("themes-grid");
+const themeSearch = document.getElementById("theme-search");
+let allThemes = [];
 
 async function getAllThemes() {
   try {
@@ -74,7 +76,7 @@ function renderThemes(themes) {
   if (!themesGrid) return;
 
   if (!themes || themes.length === 0) {
-    showEmptyState("No themes available yet.");
+    showEmptyState("No themes match your search.");
     return;
   }
 
@@ -83,6 +85,35 @@ function renderThemes(themes) {
   themes.forEach((theme) => {
     themesGrid.appendChild(createThemeCard(theme));
   });
+}
+
+function filterThemes(query) {
+  const normalizedQuery = query.trim().toLowerCase();
+
+  if (!normalizedQuery) {
+    renderThemes(allThemes);
+    return;
+  }
+
+  const filteredThemes = allThemes.filter((theme) => {
+    const title = [
+      theme?.title,
+      theme?.name,
+      theme?.theme_name,
+      ""
+    ].join(" ").toLowerCase();
+
+    const description = [
+      theme?.description,
+      theme?.prompt,
+      theme?.details,
+      ""
+    ].join(" ").toLowerCase();
+
+    return title.includes(normalizedQuery) || description.includes(normalizedQuery);
+  });
+
+  renderThemes(filteredThemes);
 }
 
 async function initThemes() {
@@ -98,8 +129,14 @@ async function initThemes() {
     return;
   }
 
-  var allThemes = Array.isArray(result.themes) ? result.themes : [];
+  allThemes = Array.isArray(result.themes) ? result.themes : [];
   renderThemes(allThemes);
+
+  if (themeSearch) {
+    themeSearch.addEventListener("input", function (event) {
+      filterThemes(event.target.value);
+    });
+  }
 }
 
 document.addEventListener("DOMContentLoaded", initThemes);
