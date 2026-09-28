@@ -36,7 +36,6 @@ function showLoadingState() {
 
 function showEmptyState(message) {
   if (!themesGrid) return;
-
   themesGrid.innerHTML = '<p class="themes-empty">' + message + '</p>';
 }
 
@@ -44,6 +43,7 @@ function createThemeCard(theme) {
   const card = document.createElement("article");
   card.className = "theme-card";
 
+  let id = theme && theme.id !== undefined ? theme.id : "";
   let title = "Untitled Theme";
   if (theme && theme.title) {
     title = theme.title;
@@ -67,6 +67,7 @@ function createThemeCard(theme) {
       <h3>${title}</h3>
       <p>${description}</p>
     </div>
+    <a class="theme-card-link" href="./theme-detail.html?id=${encodeURIComponent(id)}">Use this theme</a>
   `;
 
   return card;
@@ -140,4 +141,3 @@ async function initThemes() {
 }
 
 document.addEventListener("DOMContentLoaded", initThemes);
-
