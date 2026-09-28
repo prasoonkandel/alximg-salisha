@@ -1,95 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theme document</title>
+    <title>Alximg Themes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <header>
-        <div class="brand">Themes list</div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="themes.html">THEMES</a>
-            <a href="ABOUT.html">ABOUT</a>
+    <header class="header">
+        <div class="logo">Alximg</div>
+
+        <nav aria-label="Main navigation">
+            <a href="../">HOME</a>
+            <a href="./" class="active">THEMES</a>
+            <a href="#">ABOUT</a>
         </nav>
+
+        <button class="search-btn" type="button" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+        </button>
     </header>
-    <section class="hero">
-        <p class="small title"> EXPLORE YOUR STYLE</p>
-        <H1> CHOOSE A THEME</H1>
-        <p>
-            Give your favorite quotes a different artistic feeling. Pick a style and discover a new way to experience words.
-        </p>
-    </section>
-    <main class="theme section">
-    <div class="section heading">
-        <h2> Artistic Themes</h2>
-        <p> Choose the visual mood you love.</p>
-    </div>
-    <div class="theme grid">
-        <div class="theme card ghibli">
-            <span class="number">01</span>
-        <div>
-        <h3>Studio Ghibli Art</h3>
-        <p>
-            Soft,dreamy and magical artwork with a warm storybook feeling.
-        </p>
-    </div>
-    <a href="#"> EXPLORE</a>
-        </div>
-        <div class="theme card baroque">
-            <span class="number">02</span>
-            <div>
-                <h3>
-                    Baroque oil painting
-                </h3>
-                <p>
-                    Classical beauty with dramatic lighting,rich colors and elegant details.
-                </p>
-            </div>
-            <a href="#"> EXPLORE</a>
-        </div>
-        <div class="theme card pixar">
-            <span class="number">03</span>
-            <div>
-                <h3>Pixar 3D Animation</h3>
-                <p> Playful 3D inspired visuals with characters and cinematic charm.</p>
-            </div>
-            <a href="#">EXPLORE</a>
-        </div>
-        <div class="theme card heaadshot">
-            <span class="number">04</span>
-            <div>
-                <h3> Professional studio Headshot</h3>
-                <p>
-                    Clean,polished and realistic with professional studio lighting.
-                </p>
-            </div>
-            <a href="#">EXPLORE</a>
-        </div>
-        <div class="theme card manga">
-            <span class="number">05</span>
-          <div>
-            <h3> Black & White Manga</h3>
-            <p>
-                Bold linework,expressive character and classic monochrome manga style. 
+
+    <main class="themes-page">
+        <section class="page-intro" aria-labelledby="themes-page-title">
+            <h1 id="themes-page-title">Available Themes</h1>
+            <p class="intro-copy">
+                Search among our available themes to find the perfect one for your image generation needs. Each theme is designed to enhance your images with unique styles and effects.
             </p>
-          </div>
-          <a href="#"> EXPLORE</a>
-        </div>
-        <div class="theme card colorful">
-            <span class="number">06</span>
-            <div>
-                <h3>Colorful manga</h3>
-                <p> Bright colors,detailed illustrations and energetic manga inspired artwork.</p>
+        </section>
+
+        <section class="themes-section" aria-labelledby="themes-grid-title">
+            <div class="section-header">
+                <h2 id="themes-grid-title">Available Themes</h2>
             </div>
-            <a href="#">Explore</a>
-        </div>
+
+            <div class="themes-toolbar">
+                <label class="theme-search" aria-label="Search available themes">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="theme-search" placeholder="Search themes" aria-label="Search themes">
+                </label>
+            </div>
+
+            <div class="themes-grid" id="themes-grid" aria-live="polite">
+                <p class="themes-empty">No themes available yet.</p>
+            </div>
+        </section>
     </main>
-    </div>
-    <footer> 
-        <p> 2026 Image generator</p>
-        <p> Create, Imagine,discover</p>
+
+    <footer class="footer">
+        <p>Made by Alxi for Alxis</p>
     </footer>
 </body>
+
 </html>
