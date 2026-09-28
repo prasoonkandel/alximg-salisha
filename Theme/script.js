@@ -26,6 +26,12 @@ async function getAllThemes() {
   }
 }
 
+function showLoadingState() {
+  if (!themesGrid) return;
+
+  themesGrid.innerHTML = '<p class="themes-empty">Loading...</p>';
+}
+
 function showEmptyState(message) {
   if (!themesGrid) return;
 
@@ -82,6 +88,8 @@ function renderThemes(themes) {
 async function initThemes() {
   if (!themesGrid) return;
 
+  showLoadingState();
+
   var result = await getAllThemes();
 
   if (result.error) {
@@ -95,3 +103,4 @@ async function initThemes() {
 }
 
 document.addEventListener("DOMContentLoaded", initThemes);
+
